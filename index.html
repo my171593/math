@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,31 +10,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="quizgame.css">
-<script src="realgamepage.js"></script>
+
 </head>
 <body>
-    <div class="container">
-        <h4 id="player1_name"></h4><span id="player1_score"></span>
-        <br>
-        <h4 id="player2_name"></h4><span id="player2_score"></span>
-        
-
-    <center>
-        <h2 style="color: rgb(236, 236, 236);">Math Quiz!</h2>
-<h3 id="player_question"></h3>
-<h3 id="player_answer"></h3>
-		<br>
-		<br>
-		<div id="output" class="col-lg-6">
-		<br>
-        </div>
-    <h4>Number 1</h4>
-    <input type="text" id="number1" class="form-control" placeholder="number1">
-    <h4>Number 2</h4>
-    <input type="text" id="number2" class="form-control" placeholder="number2">
-    <button onclick="send()" class="btn btn-success" style="width:30%">Send </button>
-	</center>
+<center>
+<h1>Game</h1>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+    <h3>player1 login for the game</h3>
+    <label>username:</label>
+    <input type="text" id="player1nameinput" placeholder="player1 name" class="form-control">
 </div>
+<br>
+<br>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+    <h3>player2 login for the game</h3>
+    <label>username:</label>
+    <input type="text" id="player2nameinput" placeholder="player2 name" class="form-control">
+</div>
+
+<br>
+<br>
+ 
+<button style="width:30%" class="btn btn-primary" onclick="adduser();"> Login </button>
+</center> 
+<script src="gamepage.js"></script>
 </body>
 </html>
  
